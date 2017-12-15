@@ -5,11 +5,11 @@ import (
 	"net/http"
 
 	"github.com/gorilla/handlers"
-	//"github.com/mikaelkristiansson/on-track-go/album"
+	"github.com/mikaelkristiansson/on-track-go/exercise"
 )
 
 func main() {
-	//router := album.NewRouter()
+	router := exercise.NewRouter()
 
 	allowedOrigins := handlers.AllowedOrigins([]string{"*"})
 	allowedMethods := handlers.AllowedMethods([]string{"GET", "POST", "DELETE", "PUT"})
